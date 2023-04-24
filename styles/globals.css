@@ -1,22 +1,119 @@
 :root {
-background-color: orange;
-color: white;
-font-size: 60px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --background-color: orange;
+  --text-color: #ffffff;
+  --header-font: 'Bungee Inline', cursive;
+  --content-font: 'Caveat Brush', cursive;
 }
 
-h1 {
-  font-family: 'Bungee Inline', cursive;
-  font-size: 200px;
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 70px;
   font-weight: normal;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-h2 {
-font-size: 100px;
-font-weight: normal;
+.header h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--text-color);
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.whiteBlock {
+  background-color: white;
+  padding: 30px;
+  z-index: -1;
+}.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-container p {
+  font-size: 30px;
+  font-weight: normal;
+  color: var(--text-color);
+  font-family: var(--content-font);
+  text-align: center;
+  margin: 0;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Desktop stuff */
 @media (min-width: 768px) {
-
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url("/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+  } 
 }
