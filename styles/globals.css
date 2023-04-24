@@ -15,6 +15,7 @@ body {
   justify-content: center;
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 .background {
@@ -69,7 +70,7 @@ body {
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -86,7 +87,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 160px;
+  margin-top: 100px;
 }
 
 .image-container {
@@ -97,8 +98,8 @@ body {
 }
 
 .image-container img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .image-container p {
@@ -114,11 +115,6 @@ body {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-}
-
-.image-container img {
-  width: 200px;
-  height: 200px;
 }
 
 .image-container p {
@@ -134,7 +130,6 @@ p {
   margin: 5px;
 }
 
-
 .topLinks {
   display: flex;
   justify-content: space-between;
@@ -143,12 +138,17 @@ p {
 
 .emoji-link,
 .logo-link {
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
-  margin: 5px;
+  margin: 10px 10px 0 10px;
 }
 
-form {
+.title-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.form {
   display: flex;
   flex-direction: column;
 }
@@ -161,7 +161,6 @@ label {
   font-family: "Caveat Brush", cursive;
   color: white;
   align-items: flex-start;
-
 }
 
 input {
@@ -172,6 +171,9 @@ input {
   background-color: #f1f1f1;
   margin-bottom: 1rem;
   align-items: flex-start;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
 
 }
 
@@ -179,6 +181,9 @@ input {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 button {
@@ -188,13 +193,28 @@ button {
   background-color: darkorange;
   border-radius: 25px;
   border: white solid 2px;
-  padding: 5px
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#__next {
+  width: 100%;
 }
 
 /* Desktop stuff */
 @media (min-width: 768px) {
   .background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -210,7 +230,7 @@ button {
   .header h1 {
     font-size: 90px;
   }
-  
+
   .header h2 {
     font-size: 30px;
   }
@@ -223,10 +243,10 @@ button {
   }
 
   .image-container img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
-  
+
   .image-container p {
     font-size: 40px;
     font-weight: normal;
@@ -235,14 +255,26 @@ button {
     text-align: center;
     margin: 0;
   }
-  
+
   .image-container:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
   }
 
   .formContent {
-    margin-top: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
+  .emoji-link:hover,
+  .logo-link:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  button:hover {
+    color: darkorange;
+    background-color: white;
+    border: darkorange solid 2px;
+  }
 }

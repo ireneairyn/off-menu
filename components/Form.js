@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 function Form() {
@@ -9,13 +10,8 @@ function Form() {
   const [sideDish, setSideDish] = useState("");
   const [drink, setDrink] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // handle form submission here
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="form">
       <label>
         🍶 Tap, still or sparking water?
         <input
@@ -33,7 +29,7 @@ function Form() {
         />
       </label>
       <label>
-        🧆 Dream starter:
+        🧆 Dream starter?
         <input
           type="text"
           value={starter}
@@ -41,7 +37,7 @@ function Form() {
         />
       </label>
       <label>
-        🍲 Main course:
+        🍲 Main course?
         <input
           type="text"
           value={mainCourse}
@@ -49,7 +45,7 @@ function Form() {
         />
       </label>
       <label>
-        🥙 Side dish:
+        🥙 Side dish?
         <input
           type="text"
           value={sideDish}
@@ -57,7 +53,7 @@ function Form() {
         />
       </label>
       <label>
-        🍹 Drink:
+        🍹 Drink?
         <input
           type="text"
           value={drink}
@@ -65,15 +61,32 @@ function Form() {
         />
       </label>
       <label>
-        🍰 Dessert:
+        🍰 Dessert?
         <input
           type="text"
           value={dessert}
           onChange={(e) => setDessert(e.target.value)}
         />
       </label>
-      <button type="submit">Submit</button>
-    </form>
+      <div className="buttonContainer">
+        <Link
+          href={{
+            pathname: "/menu",
+            query: {
+              water,
+              poppabread,
+              starter,
+              mainCourse,
+              sideDish,
+              drink,
+              dessert,
+            },
+          }}
+        >
+          <button type="submit">Submit</button>
+        </Link>
+      </div>
+    </div>
   );
 }
 
