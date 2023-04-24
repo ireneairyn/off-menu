@@ -15,7 +15,6 @@ function HomePage() {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <title>OFF MENU</title>
       </Head>
-      <div style={{ backgroundImage: "url('/background.png')" }}></div>
       <div className="background">
         <div className="topLinks">
           <a
