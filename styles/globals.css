@@ -55,11 +55,7 @@ html, body {
   margin: 0;
 }
 
-.whiteBlock {
-  background-color: white;
-  padding: 30px;
-  z-index: -1;
-}.background {
+.background {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,6 +95,18 @@ html, body {
 .image-container:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
+}
+.topLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emoji-link, .logo-link {
+  font-size: 35px;
+  text-decoration: none;
+  margin: 10px;
+  
 }
 
 /* Desktop stuff */
