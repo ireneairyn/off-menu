@@ -23,6 +23,7 @@ function MenuPage() {
           drink={query.drink}
           dessert={query.dessert}
         />
+        
       </div>
     </>
   );
