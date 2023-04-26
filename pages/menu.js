@@ -30,7 +30,6 @@ function MenuPage() {
   );
 }
 
-
 function ShareButton() {
   const [isCopied, setIsCopied] = useState(false);
 
@@ -45,8 +44,7 @@ function ShareButton() {
 
   return (
     <>
-      <button onClick={handleShareClick}>Share</button>
-      {isCopied && <span>Copied!</span>}
+      <button onClick={handleShareClick}>{isCopied ? "copied!" : "Share"}</button>
     </>
   );
 }

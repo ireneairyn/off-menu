@@ -36,6 +36,21 @@ export default function App({ Component, pageProps }) {
         </div>
         <Component {...pageProps} />
       </div>
+      <div className="footer">
+        <span>
+          <Link href="/about">About |</Link>
+        </span>
+        <span>
+          <a href="https://github.com/ireneairyn/off-menu" target="_blank">
+            | Github |
+          </a>
+        </span>
+        <span>
+          <a href="https://www.offmenupodcast.co.uk/" target="_blank">
+            | Off Menu Podcast
+          </a>
+        </span>
+      </div>
     </>
   );
 }
