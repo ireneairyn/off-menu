@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import Menu from "/components/Menu";
+import { useState } from "react";
 
 function MenuPage() {
   const router = useRouter();
@@ -23,8 +24,29 @@ function MenuPage() {
           drink={query.drink}
           dessert={query.dessert}
         />
-        
+        <ShareButton />
       </div>
+    </>
+  );
+}
+
+
+function ShareButton() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  function handleShareClick() {
+    navigator.clipboard.writeText(window.location.href);
+    setIsCopied(true);
+
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 1500); // Hide the message after 2 seconds
+  }
+
+  return (
+    <>
+      <button onClick={handleShareClick}>Share</button>
+      {isCopied && <span>Copied!</span>}
     </>
   );
 }
