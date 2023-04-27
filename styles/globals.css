@@ -270,6 +270,7 @@ button {
   color: white;
   padding: 10px;
   font-family: 'Reem Kufi', sans-serif;
+  word-spacing: 4px;
   bottom: 0;
   width: 100%;
 
@@ -317,6 +318,8 @@ button {
 
   .header h2 {
     font-size: 30px;
+    word-spacing: 8px;
+
   }
 
   .image-container {
