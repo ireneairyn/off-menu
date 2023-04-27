@@ -15,7 +15,7 @@ function AboutPage() {
           same name, hosted by comedians Ed Gamble and James Acaster.{" "}
         </p>
         <p>
-          As fans of the Off Menu podcast, I was inspired by the creative and
+          As a fan of the Off Menu podcast, I was inspired by the creative and
           entertaining conversations Ed and James have with their guests about
           their dream meals and I wanted to create a platform where anyone could
           share their own imaginary meals and discover new and interesting

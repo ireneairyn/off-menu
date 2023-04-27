@@ -64,7 +64,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: var(--text-color);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   text-align: center;
   margin: 0;
 }
@@ -151,6 +151,7 @@ p {
 .form {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 label {
@@ -170,7 +171,7 @@ input {
   margin-bottom: 1rem;
   border-radius: 25px;
   font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   text-align: center;
 }
 
@@ -202,6 +203,7 @@ button {
 
 .wrapper {
   width: 100%;
+  padding-bottom: 50px;
 }
 
 #__next {
@@ -212,7 +214,7 @@ button {
 
 .finalMenu {
   font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   background-color: white;
   border: darkorange solid 2px;
   padding: 20px;
@@ -267,7 +269,7 @@ button {
   margin-top: 15px;
   color: white;
   padding: 10px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   bottom: 0;
   width: 100%;
 
@@ -286,7 +288,7 @@ button {
 }
 
 .aboutContent p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   margin: 20px ;
   font-size: 20px;
   color: white;
