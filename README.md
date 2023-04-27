@@ -1,3 +1,15 @@
+# OFF MENU 🍽️ 
+
+Small project to create and share imaginary dream meals. Inspired by the podcast of the same name, hosted by comedians Ed Gamble and James Acaster.
+
+## Check it out 👀
+
+*  Click [here](https://off-menu.netlify.app/) to create your dream meal! 🍽️ 
+
+
+*  Click [here](https://www.offmenupodcast.co.uk/") to check out the podcast! 🎙️
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
