@@ -35,21 +35,21 @@ export default function App({ Component, pageProps }) {
           <h2>DREAM MEAL GENERATOR</h2>
         </div>
         <Component {...pageProps} />
-      </div>
-      <div className="footer">
-        <span>
-          <Link href="/about">About |</Link>
-        </span>
-        <span>
-          <a href="https://github.com/ireneairyn/off-menu" target="_blank">
-            | Github |
-          </a>
-        </span>
-        <span>
-          <a href="https://www.offmenupodcast.co.uk/" target="_blank">
-            | Off Menu Podcast
-          </a>
-        </span>
+        <div className="footer">
+          <span>
+            <Link href="/about">About |</Link>
+          </span>
+          <span>
+            <a href="https://github.com/ireneairyn/off-menu" target="_blank">
+            &nbsp;Github |
+            </a>
+          </span>
+          <span>
+            <a href="https://www.offmenupodcast.co.uk/" target="_blank">
+            &nbsp;Off Menu Podcast
+            </a>
+          </span>
+        </div>
       </div>
     </>
   );
