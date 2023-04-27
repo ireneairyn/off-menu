@@ -278,6 +278,21 @@ button {
   color: white;
 }
 
+.aboutContent h1 {
+  font-family: "Caveat Brush", cursive;
+  color: white;
+  margin: 20px ;
+  font-size: 50px;
+}
+
+.aboutContent p {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 20px ;
+  font-size: 20px;
+  color: white;
+  background-color: darkorange;
+}
+
 /* Desktop stuff */
 @media (min-width: 768px) {
   .background {
@@ -348,5 +363,10 @@ button {
   .finalMenuContainer {
     padding: 15px;
     margin: 0px 5px 15px 5px;
+  }
+
+  .footer a:hover {
+    font-weight: bold;
+    color: whitesmoke;
   }
 }
