@@ -304,6 +304,14 @@ button {
 
 }
 
+.makeMeal {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Caveat Brush", cursive;
+  color: white;
+  margin: 10px;
+}
+
 /* Desktop stuff */
 @media (min-width: 768px) {
   .background {
@@ -381,5 +389,14 @@ button {
   .footer a:hover {
     font-weight: bold;
     color: whitesmoke;
+  }
+  .makeMeal {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .makeMeal:hover {
+    color: darkorange;
+    background-color: white;
+    border-radius: 20px;
   }
 }

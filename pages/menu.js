@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import React from "react";
 import Menu from "/components/Menu";
 import { useState } from "react";
+import Link from "next/link";
+
 
 function MenuPage() {
   const router = useRouter();
@@ -25,6 +27,9 @@ function MenuPage() {
           dessert={query.dessert}
         />
         <ShareButton />
+        <Link href="/form" className="makeMeal">
+            <p>🍽️ Make a new meal! 🍽️</p>
+          </Link>
       </div>
     </>
   );
