@@ -67,6 +67,8 @@ body {
   font-family: 'Reem Kufi', sans-serif;
   text-align: center;
   margin: 0;
+  word-spacing: 8px;
+
 }
 
 .background {
@@ -173,6 +175,8 @@ input {
   font-size: 20px;
   font-family: 'Reem Kufi', sans-serif;
   text-align: center;
+  word-spacing: 4px;
+
 }
 
 .formContent {
@@ -215,6 +219,7 @@ button {
 .finalMenu {
   font-size: 20px;
   font-family: 'Reem Kufi', sans-serif;
+  word-spacing: 4px;
   background-color: white;
   border: darkorange solid 2px;
   padding: 20px;
@@ -238,6 +243,7 @@ button {
   margin: 5px 0 5px 0;
   color: darkorange;
   font-family: 'Princess Sofia', cursive;
+  
 }
 
 .enjoy {
@@ -294,6 +300,8 @@ button {
   font-size: 20px;
   color: white;
   background-color: darkorange;
+  word-spacing: 4px;
+
 }
 
 /* Desktop stuff */
