@@ -16,6 +16,7 @@ function Form() {
         🍶 Tap, still or sparking water?
         <input
           type="text"
+          name="water"
           value={water}
           onChange={(e) => setWater(e.target.value)}
         />
@@ -24,6 +25,7 @@ function Form() {
         🫓 Poppadoms or bread?
         <input
           type="text"
+          name="poppabread"
           value={poppabread}
           onChange={(e) => setPoppabread(e.target.value)}
         />
@@ -32,6 +34,7 @@ function Form() {
         🧆 Dream starter?
         <input
           type="text"
+          name="starter"
           value={starter}
           onChange={(e) => setStarter(e.target.value)}
         />
@@ -40,6 +43,7 @@ function Form() {
         🍲 Main course?
         <input
           type="text"
+          name="mainCourse"
           value={mainCourse}
           onChange={(e) => setMainCourse(e.target.value)}
         />
@@ -48,6 +52,7 @@ function Form() {
         🥙 Side dish?
         <input
           type="text"
+          name="sideDish"
           value={sideDish}
           onChange={(e) => setSideDish(e.target.value)}
         />
@@ -56,6 +61,7 @@ function Form() {
         🍹 Drink?
         <input
           type="text"
+          name="drink"
           value={drink}
           onChange={(e) => setDrink(e.target.value)}
         />
@@ -64,6 +70,7 @@ function Form() {
         🍰 Dessert?
         <input
           type="text"
+          name="dessert"
           value={dessert}
           onChange={(e) => setDessert(e.target.value)}
         />
